@@ -433,124 +433,80 @@ section:not(:last-child) {
   gap: 4px;
 }
 
-/* ─── Hero Initials Display ──────────────────────────────── */
-.hero-photo-wrap {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-initials-display {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background: #060606;
-  border: 1px solid var(--accent);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent),
-              0 0 40px color-mix(in srgb, var(--accent) 10%, transparent),
-              var(--shadow-lg);
-  cursor: default;
-  flex-direction: column;
-  gap: 0;
-}
-
-/* Corner bracket accents */
-.hid-corner {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-color: var(--accent);
-  border-style: solid;
-  opacity: 0.6;
-}
-.hid-tl { top: 12px;    left: 12px;    border-width: 2px 0 0 2px; }
-.hid-tr { top: 12px;    right: 12px;   border-width: 2px 2px 0 0; }
-.hid-bl { bottom: 12px; left: 12px;    border-width: 0 0 2px 2px; }
-.hid-br { bottom: 12px; right: 12px;   border-width: 0 2px 2px 0; }
-
-/* Scan line — animates top to bottom on loop */
-.hid-scanline {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: 0;
-  animation: scanline 4s ease-in-out 2.5s infinite;
-}
-
-@keyframes scanline {
-  0%   { top: 0%;   opacity: 0; }
-  5%   { opacity: 0.4; }
-  95%  { opacity: 0.4; }
-  100% { top: 100%; opacity: 0; }
-}
-
-/* Letter container */
-.hid-inner {
-  display: flex;
-  align-items: center;
-  gap: 0.05em;
-}
-
-.hid-letter {
-  font-family: 'Space Mono', monospace;
-  font-size: 7rem;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1;
-  text-shadow: 0 0 20px color-mix(in srgb, var(--accent) 50%, transparent);
+/* ─── Hero Name Typewriter Cursor ────────────────────────── */
+.hero-name-cursor {
   display: inline-block;
-  min-width: 0.65em;
-  text-align: center;
-}
-
-/* Blinking block cursor */
-.hid-cursor {
-  font-family: 'Space Mono', monospace;
-  font-size: 5rem;
   color: var(--accent);
-  line-height: 1;
+  font-weight: 300;
   animation: blink 0.7s step-end infinite;
+  margin-left: 2px;
 }
 
-.hid-cursor.hidden { display: none; }
+.hero-name-cursor.hidden { display: none; }
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
 }
 
-/* Label at bottom */
-.hid-label {
+/* ─── Hero Photo ─────────────────────────────────────────── */
+.hero-photo-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.hero-photo-bg {
   position: absolute;
-  bottom: 16px;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.6rem;
-  color: var(--accent);
-  opacity: 0.4;
-  letter-spacing: 0.08em;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--accent-subtle) 0%, var(--bg-subtle) 100%);
+  transform: rotate(3deg);
+  transition: transform var(--transition-md);
 }
 
-/* Hover glitch */
-.hero-initials-display:hover .hid-letter {
-  animation: glitch 0.15s steps(1) infinite;
+.hero-photo-wrap:hover .hero-photo-bg {
+  transform: rotate(5deg);
 }
 
-@keyframes glitch {
-  0%   { transform: translate(0,    0)    skewX(0deg);  }
-  20%  { transform: translate(-2px, 1px)  skewX(-2deg); }
-  40%  { transform: translate(2px,  -1px) skewX(1deg);  }
-  60%  { transform: translate(-1px, 0)    skewX(0deg);  }
-  80%  { transform: translate(1px,  1px)  skewX(2deg);  }
-  100% { transform: translate(0,    0)    skewX(0deg);  }
+.hero-photo {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-md);
 }
+
+.hero-photo-wrap:hover .hero-photo {
+  transform: translateY(-4px);
+}
+
+.hero-photo-placeholder {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-subtle);
+  border: 2px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  box-shadow: var(--shadow-md);
+}
+
+.hero-photo-placeholder svg { width: 40px; height: 40px; opacity: 0.4; }
 
 /* ─── Writing Section ────────────────────────────────────── */
 #writing { background: var(--bg); }
@@ -822,6 +778,24 @@ section:not(:last-child) {
   color: var(--text-secondary);
 }
 
+.offering-future {
+  opacity: 0.7;
+  border-style: dashed;
+}
+
+.offering-future-label {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-subtle);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  margin-bottom: 6px;
+}
+
 /* ─── Contact Form ───────────────────────────────────────── */
 .contact-form-wrap {
   background: var(--bg-card);
@@ -959,9 +933,9 @@ footer {
     grid-template-columns: 1fr 280px;
     gap: 48px;
   }
-  .hero-initials-display { width: 260px; height: 260px; }
-  .hero-initials-display .hid-letter { font-size: 5.5rem; }
-  .hero-initials-display .hid-cursor { font-size: 4.2rem; }
+  .hero-photo-frame,
+  .hero-photo,
+  .hero-photo-placeholder { width: 260px; height: 260px; }
   .work-inner { grid-template-columns: 1fr; gap: 48px; }
 }
 
@@ -975,12 +949,13 @@ footer {
     text-align: center;
   }
   .hero-photo-wrap { order: -1; }
-  .hero-initials-display { width: 220px; height: 220px; }
-  .hero-initials-display .hid-letter { font-size: 4.5rem; }
-  .hero-initials-display .hid-cursor { font-size: 3.5rem; }
+  .hero-photo-frame,
+  .hero-photo,
+  .hero-photo-placeholder { width: 220px; height: 220px; }
   .hero-greeting { justify-content: center; }
   .hero-bio { margin: 0 auto 40px; }
-  .hero-actions { justify-content: center; }
+  .hero-actions { justify-content: center; flex-direction: column; align-items: center; }
+  .hero-actions .btn-secondary { width: 100%; justify-content: center; }
   .hero-socials { justify-content: center; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }

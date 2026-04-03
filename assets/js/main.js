@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   injectSocialLinks();
   injectContactEmail();
-  initHeroInitials();
+  initHeroNameTypewriter();
 });
 
 /* ─── Theme (Dark Mode) ──────────────────────────────────── */
@@ -247,31 +247,29 @@ function injectContactEmail() {
   });
 }
 
-/* ─── Hero Initials Animation ────────────────────────────── */
-function initHeroInitials() {
-  const elA      = document.getElementById('hid-a');
-  const elI      = document.getElementById('hid-i');
-  const elCursor = document.getElementById('hid-cursor');
-  if (!elA || !elI || !elCursor) return;
+/* ─── Hero Name Typewriter ───────────────────────────────── */
+function initHeroNameTypewriter() {
+  const elText   = document.getElementById('hero-name-text');
+  const elCursor = document.getElementById('hero-name-cursor');
+  if (!elText || !elCursor) return;
 
-  // Wait for page animate-in to finish
+  const name = 'Aadil Illyas.';
+  let i = 0;
+
+  // Wait for the hero animate-in delay before starting
   setTimeout(() => {
-    elA.textContent = 'A';
-
-    // Pause, then type "I"
-    setTimeout(() => {
-      elCursor.classList.add('hidden');
-      elI.textContent = 'I';
-
-      // Cursor reappears after "I", blinks 3 cycles then hides
-      setTimeout(() => {
-        elCursor.classList.remove('hidden');
+    const interval = setInterval(() => {
+      elText.textContent = name.slice(0, i + 1);
+      i++;
+      if (i >= name.length) {
+        clearInterval(interval);
+        // Blink cursor a few more times then hide it
         setTimeout(() => {
           elCursor.classList.add('hidden');
-        }, 2100);
-      }, 200);
-    }, 500);
-  }, 800);
+        }, 2000);
+      }
+    }, 80);
+  }, 500);
 }
 
 /* ─── Helpers ────────────────────────────────────────────── */
