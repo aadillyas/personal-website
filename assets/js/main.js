@@ -7,8 +7,8 @@
 
 const CONFIG = {
   email:     'your@email.com',       // UPDATE: your email address
-  linkedin:  'https://linkedin.com/in/yourhandle',  // UPDATE
-  github:    'https://github.com/yourhandle',        // UPDATE
+  linkedin:  'https://www.linkedin.com/in/aadil-illyas',
+  github:    'https://github.com/aadillyas',
   twitter:   '',                      // UPDATE or leave blank to hide
   substack:  '',                      // UPDATE when live
 };
