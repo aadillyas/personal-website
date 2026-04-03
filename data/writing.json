@@ -1,0 +1,18 @@
+[
+  {
+    "id": "placeholder-post-1",
+    "title": "Your first post title goes here",
+    "summary": "Add your Substack posts to data/writing.json. Drop in a title, short teaser, date, and URL — they'll render as cards automatically.",
+    "date": "2025-06-01",
+    "url": "",
+    "readingTime": "5 min"
+  },
+  {
+    "id": "placeholder-post-2",
+    "title": "What enterprise AI actually looks like from the inside",
+    "summary": "A placeholder for the kind of thinking you'll share — practical, grounded, no hype.",
+    "date": "2025-05-15",
+    "url": "",
+    "readingTime": "7 min"
+  }
+]

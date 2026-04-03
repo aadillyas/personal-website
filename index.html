@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aadil — Builder, Analyst, AI Nerd</title>
+  <meta name="description" content="Analytics Lead by day, builder by night. I make things at the intersection of data, AI, and ideas — from Colombo, Sri Lanka." />
+  <meta property="og:title" content="Aadil — Builder, Analyst, AI Nerd" />
+  <meta property="og:description" content="Analytics Lead by day, builder by night. Based in Colombo, Sri Lanka." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">aadil<span>.</span></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#writing"      class="nav-link">Writing</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#work-with-me" class="nav-link">Work With Me</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-mobile-drawer" id="nav-mobile-drawer" aria-hidden="true">
+    <a href="#writing">Writing</a>
+    <a href="#projects">Projects</a>
+    <a href="#work-with-me">Work With Me</a>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Text -->
+        <div class="hero-text">
+          <div class="hero-greeting" data-animate>
+            Hey, I'm
+          </div>
+
+          <h1 class="hero-name" data-animate data-animate-delay="1">Aadil.</h1>
+
+          <p class="hero-tagline" data-animate data-animate-delay="2">
+            Analytics Lead by day,<br>builder by night.
+          </p>
+
+          <p class="hero-bio" data-animate data-animate-delay="3">
+            I make things. Credit card comparison tools, AI-powered workflows,
+            self-hosted utilities — <strong>if I spot a problem worth solving, I ship something.</strong>
+            By day I lead AI & analytics delivery at
+            <strong>Octave @ JKH</strong>, Sri Lanka's largest conglomerate.
+            But this space is about the other side: the projects, the thinking,
+            and everything I'm building when the laptop opens after hours.
+            Based in <strong>Colombo 🇱🇰</strong>.
+          </p>
+
+          <div class="hero-actions" data-animate data-animate-delay="4">
+            <a href="#writing" class="btn-primary">
+              Read my writing
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#work-with-me" class="btn-secondary">Work with me</a>
+          </div>
+
+          <!-- Socials -->
+          <div class="hero-socials" data-animate data-animate-delay="4">
+            <a data-social="linkedin" href="#" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a data-social="github" href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </a>
+            <a data-social="twitter" href="#" class="social-link" target="_blank" rel="noopener" aria-label="X / Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a data-social="substack" href="#" class="social-link" target="_blank" rel="noopener" aria-label="Substack">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+            </a>
+            <span class="hero-location">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Colombo, Sri Lanka
+            </span>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="hero-photo-wrap" data-animate data-animate-delay="2">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-bg"></div>
+            <!--
+              TO ADD YOUR PHOTO:
+              1. Add your headshot as assets/images/photo.jpg
+              2. Remove the placeholder div below
+              3. Uncomment the <img> tag
+            -->
+            <div class="hero-photo-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Add photo.jpg to<br>assets/images/</span>
+            </div>
+            <!-- <img src="assets/images/photo.jpg" alt="Aadil" class="hero-photo" /> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       WRITING
+       Data loaded from: data/writing.json
+       To add a post: edit writing.json (no HTML changes needed)
+  ══════════════════════════════════════════════════════ -->
+  <section id="writing">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Writing</span>
+        <h2>Thinking out loud</h2>
+        <p>I write about AI in the enterprise, building products as a non-technical founder, and whatever I'm figuring out in real time.</p>
+      </div>
+
+      <!-- Cards injected here by main.js from data/writing.json -->
+      <div class="writing-grid" id="writing-grid"></div>
+
+      <!-- Substack CTA — update href in CONFIG.substack in main.js -->
+      <div class="writing-substack-cta" data-animate>
+        <a data-social="substack" href="#" target="_blank" rel="noopener" class="btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+          Follow on Substack
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       PROJECTS
+       Data loaded from: data/projects.json
+       To add a project: edit projects.json (no HTML changes needed)
+  ══════════════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Projects</span>
+        <h2>Things I've built</h2>
+        <p>Side projects, tools, and experiments — some finished, some very much in progress. I build to learn, to scratch itches, and occasionally because no one else has.</p>
+      </div>
+
+      <!-- Cards injected here by main.js from data/projects.json -->
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       WORK WITH ME
+  ══════════════════════════════════════════════════════ -->
+  <section id="work-with-me">
+    <div class="container">
+      <div class="work-inner">
+
+        <!-- Left: Offerings -->
+        <div>
+          <div class="section-header" data-animate>
+            <span class="section-tag">Work With Me</span>
+            <h2>Let's work together</h2>
+            <p>I'm available for AI advisory and upskilling work. I help organisations understand where AI can actually move the needle — not in theory, but in practice.</p>
+          </div>
+
+          <div class="work-offerings">
+
+            <div class="offering" data-animate data-animate-delay="1">
+              <div class="offering-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              </div>
+              <div class="offering-text">
+                <h4>AI Readiness Assessment</h4>
+                <p>A top-down look at where your organisation actually stands on AI — what's ready, what's not, and where the highest-leverage opportunities are hiding.</p>
+              </div>
+            </div>
+
+            <div class="offering" data-animate data-animate-delay="2">
+              <div class="offering-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <div class="offering-text">
+                <h4>Team AI Upskilling</h4>
+                <p>Practical, hands-on sessions that get your team actually using AI tools — not just knowing they exist. Tailored to your stack and your people's starting points.</p>
+              </div>
+            </div>
+
+            <div class="offering" data-animate data-animate-delay="3">
+              <div class="offering-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="offering-text">
+                <h4>Advisory & Strategy</h4>
+                <p>Ongoing advisory for data and AI strategy — from building the right team structure to figuring out which vendors are worth the pitch deck.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div data-animate data-animate-delay="1">
+          <div class="contact-form-wrap">
+            <h3>Get in touch</h3>
+            <p>Tell me what you're working on and what you need. I'll get back to you within a couple of days.</p>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" placeholder="you@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" placeholder="What are you working on? What kind of help are you looking for?" required></textarea>
+              </div>
+              <button type="submit" class="form-submit" id="form-submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-left">
+          Built by <span>Aadil</span> — Colombo, Sri Lanka.
+        </p>
+        <div class="footer-right">
+          <a data-social="linkedin" href="#" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a data-social="github" href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+          <a data-social="twitter" href="#" class="social-link" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

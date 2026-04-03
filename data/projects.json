@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cardmatchlk",
+    "title": "CardMatchLK",
+    "description": "A Sri Lankan credit card comparison tool that cuts through the noise — find the right card based on how you actually spend.",
+    "status": "in-progress",
+    "tags": ["Web App", "Sri Lanka", "FinTech"],
+    "url": "",
+    "github": "",
+    "year": 2025
+  },
+  {
+    "id": "link-resolver",
+    "title": "Link Resolver & Clean Player",
+    "description": "Watch TikTok and Instagram videos shared by friends without having the apps. Self-hosted, clean, no tracking.",
+    "status": "in-progress",
+    "tags": ["Self-hosted", "Privacy", "Tools"],
+    "url": "",
+    "github": "",
+    "year": 2025
+  },
+  {
+    "id": "placeholder-project",
+    "title": "Your Next Project",
+    "description": "Add your project to data/projects.json — title, description, status, and links. It'll appear here automatically.",
+    "status": "concept",
+    "tags": ["Coming Soon"],
+    "url": "",
+    "github": "",
+    "year": 2025
+  }
+]
