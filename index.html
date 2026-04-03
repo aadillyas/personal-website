@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
@@ -113,21 +113,20 @@
           </div>
         </div>
 
-        <!-- Photo -->
+        <!-- Initials Display -->
         <div class="hero-photo-wrap" data-animate data-animate-delay="2">
-          <div class="hero-photo-frame">
-            <div class="hero-photo-bg"></div>
-            <!--
-              TO ADD YOUR PHOTO:
-              1. Add your headshot as assets/images/photo.jpg
-              2. Remove the placeholder div below
-              3. Uncomment the <img> tag
-            -->
-            <div class="hero-photo-placeholder">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              <span>Add photo.jpg to<br>assets/images/</span>
+          <div class="hero-initials-display" id="hero-initials" aria-label="A.I. initials display">
+            <div class="hid-corner hid-tl"></div>
+            <div class="hid-corner hid-tr"></div>
+            <div class="hid-corner hid-bl"></div>
+            <div class="hid-corner hid-br"></div>
+            <div class="hid-scanline"></div>
+            <div class="hid-inner">
+              <span class="hid-letter" id="hid-a"></span>
+              <span class="hid-cursor" id="hid-cursor">█</span>
+              <span class="hid-letter" id="hid-i"></span>
             </div>
-            <!-- <img src="assets/images/photo.jpg" alt="Aadil" class="hero-photo" /> -->
+            <div class="hid-label">[ Aadil Illyas ]</div>
           </div>
         </div>
 

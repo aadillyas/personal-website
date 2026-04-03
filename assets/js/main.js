@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   injectSocialLinks();
   injectContactEmail();
+  initHeroInitials();
 });
 
 /* ─── Theme (Dark Mode) ──────────────────────────────────── */
@@ -244,6 +245,33 @@ function injectContactEmail() {
     el.setAttribute('href', `mailto:${CONFIG.email}`);
     if (el.classList.contains('email-text')) el.textContent = CONFIG.email;
   });
+}
+
+/* ─── Hero Initials Animation ────────────────────────────── */
+function initHeroInitials() {
+  const elA      = document.getElementById('hid-a');
+  const elI      = document.getElementById('hid-i');
+  const elCursor = document.getElementById('hid-cursor');
+  if (!elA || !elI || !elCursor) return;
+
+  // Wait for page animate-in to finish
+  setTimeout(() => {
+    elA.textContent = 'A';
+
+    // Pause, then type "I"
+    setTimeout(() => {
+      elCursor.classList.add('hidden');
+      elI.textContent = 'I';
+
+      // Cursor reappears after "I", blinks 3 cycles then hides
+      setTimeout(() => {
+        elCursor.classList.remove('hidden');
+        setTimeout(() => {
+          elCursor.classList.add('hidden');
+        }, 2100);
+      }, 200);
+    }, 500);
+  }, 800);
 }
 
 /* ─── Helpers ────────────────────────────────────────────── */
