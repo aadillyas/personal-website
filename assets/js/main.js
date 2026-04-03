@@ -10,7 +10,7 @@ const CONFIG = {
   linkedin:  'https://www.linkedin.com/in/aadil-illyas',
   github:    'https://github.com/aadillyas',
   twitter:   '',                      // UPDATE or leave blank to hide
-  substack:  '',                      // UPDATE when live
+  substack:  'https://substack.com/@aadilillyas',
 };
 
 /* ─── DOM Ready ──────────────────────────────────────────── */
