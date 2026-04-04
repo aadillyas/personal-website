@@ -160,7 +160,16 @@ async function renderProjects() {
 
   try {
     const res = await fetch('data/projects.json');
-    const projects = await res.json();
+    const projects = (await res.json()).sort((a, b) => {
+      const statusRank = { live: 0, 'in-progress': 1, concept: 2 };
+      const statusDiff = (statusRank[a.status] ?? 99) - (statusRank[b.status] ?? 99);
+      if (statusDiff !== 0) return statusDiff;
+
+      const yearDiff = (b.year ?? 0) - (a.year ?? 0);
+      if (yearDiff !== 0) return yearDiff;
+
+      return (a.title || '').localeCompare(b.title || '');
+    });
 
     container.innerHTML = projects.map((p, i) => {
       const statusLabel = { 'live': 'Live', 'in-progress': 'In Progress', 'concept': 'Concept' }[p.status] || p.status;

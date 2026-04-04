@@ -8,5 +8,15 @@
     "url": "",
     "github": "",
     "year": 2025
+  },
+  {
+    "id": "groundwork",
+    "title": "Groundwork",
+    "description": "A pre-build OSS research tool that helps builders figure out what already exists before they start from scratch. It breaks an idea into components, scans GitHub for relevant open-source projects, and returns a clearer use-vs-build strategy.",
+    "status": "live",
+    "tags": ["AI", "Open Source", "Research", "Web App"],
+    "url": "https://groundwork-chat.vercel.app/",
+    "github": "https://github.com/aadillyas/groundwork",
+    "year": 2026
   }
 ]
