@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Aadil Illyas favicon">
+  <rect width="128" height="128" fill="transparent"/>
+  <text
+    x="16"
+    y="84"
+    font-family="'Space Grotesk', 'Inter', sans-serif"
+    font-size="56"
+    font-weight="700"
+    letter-spacing="-2"
+    fill="#16a34a"
+  >&gt;</text>
+  <text
+    x="50"
+    y="84"
+    font-family="'Space Grotesk', 'Inter', sans-serif"
+    font-size="56"
+    font-weight="700"
+    letter-spacing="-2"
+    fill="#111111"
+  >AI</text>
+</svg>
