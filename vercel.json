@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/groundwork",
+      "destination": "https://groundwork-chat.vercel.app/",
+      "permanent": true
+    }
+  ]
+}
